@@ -1,0 +1,81 @@
+/* Contenedor del formulario */
+form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    font-family: Arial, sans-serif;
+}
+
+/* Cada campo */
+form p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+form label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* Focus */
+form input:focus {
+    outline: none;
+    border-color: #198754;
+    box-shadow: 0 0 0 2px rgba(25, 135, 84, 0.2);
+}
+
+/* Checkbox */
+form input[type="checkbox"] {
+    width: auto;
+    margin-top: 5px;
+}
+
+/* Botones */
+/* button, a.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+} */
+
+/* Botón guardar */
+button {
+    background-color: #198754;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #157347;
+}
+
+/* Botón cancelar */
+a.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+a.btn-secondary:hover {
+    background-color: #5c636a;
+}
