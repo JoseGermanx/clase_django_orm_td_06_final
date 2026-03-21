@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Cliente
+from .models import Cliente, Perfil
 from django.contrib.auth.models import User
 from django.contrib.auth.admin import UserAdmin
 
@@ -19,5 +19,6 @@ class UserAdminPersonalizado(UserAdmin):
 
 admin.site.unregister(User)
 admin.site.register(User, UserAdminPersonalizado)
+admin.site.register(Perfil)
 
 # admin.site.register(Cliente, ClienteAdmin)
